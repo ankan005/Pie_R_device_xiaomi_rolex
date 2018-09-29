@@ -186,15 +186,11 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_rolex
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
-# Hack for remove liblight		
+# Hack for remove liblight
 $(shell rm -rf hardware/qcom/display-caf/msm8996/liblight)
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
-
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/lineagehw
 
 # Tap2Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
